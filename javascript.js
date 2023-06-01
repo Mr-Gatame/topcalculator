@@ -44,8 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
         currentScreen.textContent = currentValue;
     })
 
-
-
 })
 
 function handleNumber(num) {
@@ -75,4 +73,5 @@ function calculate() {
         previousValue /= currentValue;
         currentValue = previousValue;
     }
+
 }

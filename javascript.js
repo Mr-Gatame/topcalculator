@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
     equals.addEventListener('click', function () {
         calculate();
         previousScreen.textContent = '';
-        currentScreen.textContent = previousValue;
+        currentScreen.textContent = roundResult(previousValue);
     })
 
     decimal.addEventListener('click', function () {
@@ -74,4 +74,10 @@ function calculate() {
         currentValue = previousValue;
     }
 
+
 }
+
+function roundResult(number) {
+    return Math.round(number * 100000) / 100000
+}
+
